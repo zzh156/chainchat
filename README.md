@@ -117,16 +117,28 @@ module chainchat::chat_coin {
 
 # Simple Display
 Wallet:
+
 !["image can not load"](./PIC/1.jpg)
+
 Discover:
+
 !["image can not load"](./PIC/2.jpg)
+
 Friends:
+
 !["image can not load"](./PIC/3.jpg)
+
 Homepage:
+
 !["image can not load"](./PIC/4.jpg)
+
 Chatpage:
+
 !["image can not load"](./PIC/5.jpg)
+
 LoginPage:
+
 Enter your mnemonic phrase and then click the down arrow to populate the address.
+
 !["image can not load"](./PIC/6.jpg)
 
