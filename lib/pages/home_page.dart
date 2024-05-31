@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> _fetchTransactionBlock() async {
-    final client = SuiClient(SuiUrls.devnet);
+    final client = SuiClient(SuiUrls.testnet);
 
     final objects = await client.getOwnedObjects(
       widget.ed25519Address,

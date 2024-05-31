@@ -105,7 +105,7 @@ class _ChatPageState extends State<ChatPage> {
   }
 
   Future<void> _fetchNewMessages() async {
-    final client = SuiClient(SuiUrls.devnet);
+    final client = SuiClient(SuiUrls.testnet);
 
     final objectReceive = await client.getOwnedObjects(
       widget.ed25519Address!,
@@ -223,7 +223,7 @@ class _ChatPageState extends State<ChatPage> {
       final double amountDouble = double.parse(amount);
 
       final account = SuiAccount.fromMnemonics(widget.phrase, SignatureScheme.Ed25519);
-      final client = SuiClient(SuiUrls.devnet);
+      final client = SuiClient(SuiUrls.testnet);
       final tx = TransactionBlock();
       tx.setGasBudget(BigInt.from(1000000000)); // Set explicit gas budget
 
@@ -334,7 +334,7 @@ class _ChatPageState extends State<ChatPage> {
       });
       _messageController.clear();
       final account = SuiAccount.fromMnemonics(widget.phrase, SignatureScheme.Ed25519);
-      final client = SuiClient(SuiUrls.devnet);
+      final client = SuiClient(SuiUrls.testnet);
       const packageObjectId = '0x258c94354b09262213fd8d8b1834b3ad7a7bca8021e22d548a79b2c27e5c9c5e';
       final tx = TransactionBlock();
       tx.setGasBudget(BigInt.from(100000000));
